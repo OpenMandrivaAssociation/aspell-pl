@@ -1,5 +1,6 @@
 %define src_ver 6.0
-%define snap 20061121-0
+%define snap 20070825
+%define relsnap %{snap}-0
 %define languageeng polish
 %define languageenglazy Polish
 %define languagecode pl
@@ -10,26 +11,25 @@
 Summary:	%{languageenglazy} dictionary for aspell
 Name:		aspell-pl
 Version:	0.60.5
-Release:	%mkrel 1
-License:	Creative Commons ShareAlike
+Release:	%mkrel 0.%{snap}.1
+License:	GPL
 Group:		System/Internationalization
-URL:		http://aspell.sourceforge.net/
-Source0:	ftp://ftp.gnu.org/gnu/aspell/dict/%{languagecode}/aspell6-%{languagecode}-%{src_ver}_%{snap}.tar.bz2
+URL:		http://www.kurnik.pl/slownik/ort/
+Source0:	http://www.kurnik.org/dictionary/alt-aspell6-%{languagecode}-%{src_ver}_%{relsnap}.tar.bz2
 BuildRequires:	aspell >= 0.60.5
 Requires:	aspell >= %{version}
 Provides:	spell-%{languagecode}
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buidroot
-
 # Mandrake Stuff
 Requires:	locales-%{languagecode}
 Provides:	aspell-dictionary
 Provides:	aspell-%{lc_ctype}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buidroot
 
 %description
 Polish dictionary (i.e. word list) for aspell.
 
 %prep
-%setup -qn aspell6-%{languagecode}-%{src_ver}_%{snap}
+%setup -qn aspell6-%{languagecode}-%{src_ver}_%{relsnap}
 
 %build
 # note: configure is not autoconf-generated
@@ -49,5 +49,3 @@ Polish dictionary (i.e. word list) for aspell.
 %defattr(644,root,root,755)
 %doc README Copyright doc/*
 %{_libdir}/aspell-*/*
-
-
