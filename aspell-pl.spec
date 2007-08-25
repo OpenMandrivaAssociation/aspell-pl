@@ -11,7 +11,7 @@
 Summary:	%{languageenglazy} dictionary for aspell
 Name:		aspell-pl
 Version:	0.60.5
-Release:	%mkrel 0.%{snap}.2
+Release:	%mkrel 2.%{snap}.1
 License:	GPL
 Group:		System/Internationalization
 URL:		http://www.kurnik.pl/slownik/ort/
