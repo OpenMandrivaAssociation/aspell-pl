@@ -19,7 +19,7 @@ Source0:	http://www.kurnik.org/dictionary/alt-aspell6-%{languagecode}-%{src_ver}
 BuildRequires:	aspell >= 0.60.5
 Requires:	aspell >= %{version}
 Provides:	spell-%{languagecode}
-# Mandrake Stuff
+# Mandriva Stuff
 Requires:	locales-%{languagecode}
 Provides:	aspell-dictionary
 Provides:	aspell-%{lc_ctype}
