@@ -23,7 +23,6 @@ Provides:	spell-%{languagecode}
 Requires:	locales-%{languagecode}
 Provides:	aspell-dictionary
 Provides:	aspell-%{lc_ctype}
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buidroot
 
 %description
 Polish dictionary (i.e. word list) for aspell.
