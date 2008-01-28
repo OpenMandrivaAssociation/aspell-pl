@@ -1,5 +1,5 @@
 %define src_ver 6.0
-%define snap 20071128
+%define snap 20080128
 %define relsnap %{snap}-0
 %define languageeng polish
 %define languageenglazy Polish
