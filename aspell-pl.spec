@@ -1,5 +1,5 @@
 %define src_ver 6.0
-%define snap 20080128
+%define snap 20080303
 %define relsnap %{snap}-0
 %define languageeng polish
 %define languageenglazy Polish
@@ -15,7 +15,7 @@ Release:	%mkrel 2.%{snap}.1
 License:	GPLv2+
 Group:		System/Internationalization
 URL:		http://www.kurnik.pl/slownik/ort/
-Source0:	http://www.kurnik.org/dictionary/alt-aspell6-%{languagecode}-%{src_ver}_%{relsnap}.tar.bz2
+Source0:	http://www.kurnik.org/dictionary/sjp-aspell6-%{languagecode}-%{src_ver}_%{relsnap}.tar.bz2
 BuildRequires:	aspell >= 0.60.5
 Requires:	aspell >= %{version}
 Provides:	spell-%{languagecode}
