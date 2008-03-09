@@ -11,7 +11,7 @@
 Summary:	%{languageenglazy} dictionary for aspell
 Name:		aspell-pl
 Version:	0.60.5
-Release:	%mkrel 2.%{snap}.1
+Release:	%mkrel 2.%{snap}.2
 License:	GPLv2+
 Group:		System/Internationalization
 URL:		http://www.kurnik.pl/slownik/ort/
@@ -21,6 +21,8 @@ Requires:	aspell >= %{version}
 Provides:	spell-%{languagecode}
 # Mandriva Stuff
 Requires:	locales-%{languagecode}
+# aspell = 1, myspell = 2, lang-specific = 3
+Provides:	enchant-dictionary = 1
 Provides:	aspell-dictionary
 Provides:	aspell-%{lc_ctype}
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buidroot
