@@ -1,5 +1,5 @@
 %define src_ver 6.0
-%define snap 20080303
+%define snap 20080628
 %define relsnap %{snap}-0
 %define languageeng polish
 %define languageenglazy Polish
@@ -11,7 +11,7 @@
 Summary:	%{languageenglazy} dictionary for aspell
 Name:		aspell-pl
 Version:	0.60.5
-Release:	%mkrel 2.%{snap}.2
+Release:	%mkrel 2.%{snap}.3
 License:	GPLv2+
 Group:		System/Internationalization
 URL:		http://www.kurnik.pl/slownik/ort/
