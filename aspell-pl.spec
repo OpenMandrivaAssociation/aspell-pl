@@ -1,5 +1,5 @@
 %define src_ver 6.0
-%define snap 20110628
+%define snap 20150126
 %define relsnap %{snap}-0
 %define languageeng polish
 %define languageenglazy Polish
@@ -11,7 +11,7 @@
 Summary:	%{languageenglazy} dictionary for aspell
 Name:		aspell-pl
 Version:	0.60.5
-Release:	3.%{snap}.2
+Release:	3.%{snap}.3
 License:	GPLv2+
 Group:		System/Internationalization
 Url:		http://www.sjp.pl/slownik/ort/
