@@ -19,7 +19,7 @@ Source0:	http://sjp.pl/slownik/ort/sjp-aspell6-%{languagecode}-%{src_ver}_%{rels
 BuildArch:	noarch
 
 BuildRequires:	aspell >= 0.60.5
-Requires:	aspell >= %{src_ver}
+Requires:	aspell >= 0.%{src_ver}
 Provides:	spell-%{languagecode}
 # Mandriva Stuff
 Requires:	locales-%{languagecode}
