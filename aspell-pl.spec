@@ -10,8 +10,8 @@
 
 Summary:	%{languageenglazy} dictionary for aspell
 Name:		aspell-pl
-Version:	6.0.20220601.0
-Release:	2
+Version:	6.0_20230301.0
+Release:	1
 License:	GPLv2+
 Group:		System/Internationalization
 Url:		http://www.sjp.pl/slownik/ort/
