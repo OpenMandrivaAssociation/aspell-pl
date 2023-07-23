@@ -1,5 +1,5 @@
-%define src_ver 6.0
-%define snap 20150126
+%define src_ver %(echo %{version} |cut -d_ -f1)
+%define snap %(echo %{version} |cut -d_ -f2)
 %define relsnap %{snap}-0
 %define languageeng polish
 %define languageenglazy Polish
@@ -10,7 +10,7 @@
 
 Summary:	%{languageenglazy} dictionary for aspell
 Name:		aspell-pl
-Version:	6.0_20230301.0
+Version:	6.0_20230701
 Release:	1
 License:	GPLv2+
 Group:		System/Internationalization
@@ -19,7 +19,7 @@ Source0:	http://sjp.pl/slownik/ort/sjp-aspell6-%{languagecode}-%{src_ver}_%{rels
 BuildArch:	noarch
 
 BuildRequires:	aspell >= 0.60.5
-Requires:	aspell >= %{version}
+Requires:	aspell >= %{src_ver}
 Provides:	spell-%{languagecode}
 # Mandriva Stuff
 Requires:	locales-%{languagecode}
