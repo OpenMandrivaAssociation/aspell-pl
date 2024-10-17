@@ -14,7 +14,7 @@ Version:	6.0_20230701
 Release:	1
 License:	GPLv2+
 Group:		System/Internationalization
-Url:		http://www.sjp.pl/slownik/ort/
+Url:		https://www.sjp.pl/slownik/ort/
 Source0:	http://sjp.pl/slownik/ort/sjp-aspell6-%{languagecode}-%{src_ver}_%{relsnap}.tar.bz2
 BuildArch:	noarch
 
