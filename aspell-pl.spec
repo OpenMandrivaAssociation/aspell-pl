@@ -18,6 +18,11 @@ Url:		https://www.sjp.pl/slownik/ort/
 Source0:	http://sjp.pl/slownik/ort/sjp-aspell6-%{languagecode}-%{src_ver}_%{relsnap}.tar.bz2
 BuildArch:	noarch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	aspell >= 0.60.5
 Requires:	aspell >= 0.%{src_ver}
 Provides:	spell-%{languagecode}
